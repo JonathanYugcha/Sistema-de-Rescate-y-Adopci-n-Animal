@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescates para el Sistema de Control Animal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Refugio de Rescate y Adopción Animal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar Rescate</a></li>
+                <li><a href="rescates.html">Listado de Rescates</a></li>
+            </ul>
+        </nav>
+        <img src="imagen/rescate.png" alt=" " width="400"> 
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de Ingreso de un Nuevo Animal Rescatado</h2>
+            <p>Por favor, complete todos los datos requeridos para registrar el caso en el sistema.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información del Caso</legend>
+
+                    <p>
+                        <label for="titulo">Nombre o Título del caso:</label><br>
+                        <input type="text" id="titulo" name="titulo" required placeholder="Ej. Perro rescatado en la Av. Central">
+                    </p>
+
+                    <p>
+                        <label for="categoria">Categoría del animal:</label><br>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">-- Seleccione una opción --</option>
+                            <option value="perros">Perros</option>
+                            <option value="gatos">Gatos</option>
+                            <option value="fauna_silvestre">Fauna Silvestre</option>
+                        </select>
+                    </p>
+
+                    <fieldset>
+                        <legend>Nivel de Urgencia Médica:</legend>
+                        <input type="radio" id="urgencia_alta" name="urgencia" value="alta" required>
+                        <label for="urgencia_alta">Alta</label><br>
+
+                        <input type="radio" id="urgencia_media" name="urgencia" value="media">
+                        <label for="urgencia_media">Media</label><br>
+
+                        <input type="radio" id="urgencia_baja" name="urgencia" value="baja">
+                        <label for="urgencia_baja">Baja</label>
+                    </fieldset>
+
+                    <p>
+                        <label for="descripcion">Descripción detallada del estado de hallazgo:</label><br>
+                        <textarea id="descripcion" name="descripcion" rows="6" cols="50" required placeholder="Describa aquí el estado físico, lugar exacto y condiciones en las que se encontró el animal..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Guardar Registro</button>
+                        <button type="reset">Limpiar Formulario</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <br><br>
+        <p>&copy; 2026 Sistema de Rescate y Adopción Animal. Todos los derechos reservados.</p>
+        <p> &copy; Autor: Jonathan Yugcha</p>
+        <p>Contacto: jonathanresc@refugioanimal.org | Teléfono: +593 99 927 6898</p>
+    </footer>
+
+</body>
+</html>
